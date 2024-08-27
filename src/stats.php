@@ -11,6 +11,7 @@ declare(strict_types=1);
  */
 function buildContributionGraphQuery(string $user, int $year): string
 {
+    $year = "2024";
     $start = "$year-01-01T00:00:00Z";
     $end = "$year-12-31T23:59:59Z";
     return "query {
